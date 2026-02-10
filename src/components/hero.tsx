@@ -3,6 +3,7 @@ import { motion, MotionValue, useTransform } from "motion/react";
 import { Button } from "./ui/button";
 import Tag from "./tag";
 import Image from "next/image";
+import { scrollToSection } from "@/lib/utils";
 
 type HeroProps = {
   scrollY: MotionValue<number>;
@@ -116,12 +117,12 @@ const Hero = ({ scrollY }: HeroProps) => {
         </p>
 
         <div className="flex items-center justify-center gap-4 flex-wrap">
-          <Button asChild>
+          <Button asChild onClick={()=>{scrollToSection("project")}}>
             <motion.button whileHover={{ y: -2,transition:{duration:0.1} }} whileTap={{ scale: 0.97 }}>
               VIEW PROJECTS
             </motion.button>
           </Button>
-          <Button variant={"secondary"} asChild>
+          <Button variant={"secondary"} asChild onClick={()=>{scrollToSection("contact")}}>
             <motion.button whileHover={{ y: -2,transition:{duration:0.1}  }} whileTap={{ scale: 0.97 }}>
             CONTACT ME
             </motion.button>
