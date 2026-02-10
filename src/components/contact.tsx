@@ -19,7 +19,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
 }) => {
   return (
     <Button
-      className={`bg-white flex p-4 gap-4 text-black border-2 border-black ${label === "Email" ? "cursor-default" : "cursor-pointer"}`}
+      className={`bg-white flex p-4 gap-4 text-black border-2 border-black ${label === "Email" ? "hover:cursor-default" : "hover:cursor-pointer hover:scale-[90%]"}`}
       onClick={() => {
         
         if(label !== "Email"){
