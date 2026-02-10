@@ -113,7 +113,7 @@ const Contact = () => {
                 NAME
               </label>
               <input
-                name="visitorName"
+                id="visitorName"
                 type="text"
                 placeholder="Your Name"
                 className="border-4 border-black p-2 pixel-shadow w-full"
@@ -124,7 +124,7 @@ const Contact = () => {
                 EMAIL
               </label>
               <input
-                name="visitorEmail"
+                id="visitorEmail"
                 type="email"
                 placeholder="Your Email"
                 className="border-4 border-black p-2 pixel-shadow w-full"
@@ -135,14 +135,14 @@ const Contact = () => {
                 MESSAGE
               </label>
               <textarea
-                name="visitorMessage"
+                id="visitorMessage"
                 wrap="soft"
                 placeholder="Your Message"
                 className="border-4 border-black p-2 pixel-shadow w-full h-32 resize-none"
               ></textarea>
             </div>
-            <Button size={'xl'} className="bg-black text-white pixel-font flex justify-center items-center gap-2">
-              <Send className="w-5 h-5" color="white"/><span className="text-md">SEND MESSAGE</span>
+            <Button size={'xl'} className="bg-black text-white pixel-font flex justify-center items-center gap-2 group hover:bg-white hover:text-black transition-transform active:scale-95">
+              <Send className="w-5 h-5 text-white group-hover:animate-bounce group-hover:text-black"/><span className="text-md">SEND MESSAGE</span>
             </Button>
           </div>
         </div>
