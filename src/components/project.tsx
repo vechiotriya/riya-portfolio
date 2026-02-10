@@ -27,6 +27,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
           src={image}
           alt={name}
           fill
+          sizes="100%"
           className="object-cover relative bg-position-[50%_25%]"
           style={{ imageRendering: "pixelated" }}
         />
