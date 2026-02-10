@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import {DotGothic16,Montserrat } from "next/font/google";
+import {Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
-const dotGothic16 = DotGothic16({
-  variable: "--font-dot-gothic-16",
+const pressStart2P = Press_Start_2P({
+  variable: "--font-press-start-2p",
   weight: "400",
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
@@ -25,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dotGothic16.variable} ${montserrat.variable}`}>
+      <body className={`${pressStart2P.variable}`}>
         {children}
       </body>
     </html>

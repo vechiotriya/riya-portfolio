@@ -1,16 +1,30 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+"use client";
+import About from "@/components/about";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
+import Hero from "@/components/hero";
+import { PixelPet } from "@/components/pixelPet";
+import Project from "@/components/project";
+import Skill from "@/components/skill";
+import { useScroll } from "motion/react";
 
 export default function Home() {
+const scrollY=useScroll().scrollY;
   return (
-    <div >
-      <main className="flex justify-center items-center mt-9">
-        <Button variant="secondary" size="lg">
-          Click Me
-        </Button>
+    <div className="min-h-screen bg-white relative">
+      {/* Pixel Pet Companion */}
+      <PixelPet scrollY={scrollY} />
+
+      {/* Hero Section with Parallax */}
+      <Hero scrollY={scrollY} />
+      <main className="flex flex-col justify-center items-center">
+    <Skill/>
+    <Project/>
+    <About/>
+    <Contact/>
       </main>
       <footer >
-
+      <Footer />
       </footer>
     </div>
   );
