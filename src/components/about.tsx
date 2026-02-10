@@ -20,7 +20,7 @@ const Stat: React.FC<StatProps> = ({ title, value }) => {
 const About = () => {
 
   return (
-    <section className="flex flex-col gap-6 items-center w-full py-20 px-6">
+    <section id="about" className="flex flex-col gap-6 items-center w-full py-20 px-6">
       <Tag
         text="CHARACTER PROFILE"
         className="bg-linear-to-r from-purple-200 to-pink-200 text-white"

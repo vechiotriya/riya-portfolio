@@ -83,7 +83,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
 const Project = () => {
 
   return (
-    <section className="flex flex-col items-center w-full py-20 px-6 bg-gray-50">
+    <section id="project" className="flex flex-col items-center w-full py-20 px-6 bg-gray-50">
       <Tag
         text="QUEST LOG"
         className="bg-linear-to-r from-yellow-300 to-pink-300 mb-6 text-white"

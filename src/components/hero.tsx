@@ -10,7 +10,7 @@ type HeroProps = {
 const Hero = ({ scrollY }: HeroProps) => {
   const scrollOffset = useTransform(scrollY, (v) => v / 2);
   return (
-    <section className="relative h-[70%] pb-19 pt-5 flex items-center justify-center overflow-hidden bg-linear-to-b from-white to-gray-50">
+    <section id="hero" className="relative h-[70%] pb-19 pt-5 flex items-center justify-center overflow-hidden bg-linear-to-b from-white to-gray-50">
       <div className="absolute inset-0 opacity-5">
         <div className="grid grid-cols-20 grid-rows-20 w-full h-full">
           {Array.from({ length: 400 }).map((_, i) => (

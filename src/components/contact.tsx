@@ -59,7 +59,7 @@ const Contact = () => {
     },
   ];
   return (
-    <section className="flex flex-col items-center w-full py-20 px-6 bg-gray-50">
+    <section id="contact" className="flex flex-col items-center w-full py-20 px-6 bg-gray-50">
       <Tag
         text="QUEST LOG"
         className="bg-linear-to-r from-lime-200 to-blue-200 mb-6 text-white"

@@ -93,7 +93,7 @@ const Skill: React.FC = () => {
   const [active, setActive] = useState(skillData["language"]);
 
   return (
-    <section className="flex flex-col items-center py-20">
+    <section id="skill" className="flex flex-col items-center py-20">
       <Tag
         text="Skill Tree"
         className="bg-linear-to-r from-blue-300 to-emerald-300 mb-6 text-white"
