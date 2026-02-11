@@ -9,8 +9,29 @@ const pressStart2P = Press_Start_2P({
 });
 
 export const metadata: Metadata = {
-  title: "Riya Vechiot",
-  description: "Leveling up one line of code at a time.",
+  title: {
+    default: "Riya Vechiot | React Native Developer",
+    template: "%s | Riya Vechiot",
+  },
+  description:
+    "Portfolio of Riya Vechiot, a React Native mobile developer building modern, high-performance applications. Available for hire.",
+  keywords: [
+    "Riya Vechiot",
+    "React Native Developer",
+    "Mobile App Developer",
+    "Portfolio",
+    "Freelance Developer",
+  ],
+  authors: [{ name: "Riya Vechiot" }],
+  creator: "Riya Vechiot",
+  openGraph: {
+    title: "Riya Vechiot | React Native Developer",
+    description:
+      "Modern mobile applications built with React Native. Explore projects and experience.",
+    url: "https://riya-vechiot.vercel.app/",
+    siteName: "Riya Vechiot Portfolio",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +41,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${pressStart2P.variable}`}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Riya Vechiot",
+            jobTitle: "React Native Developer",
+            url: "https://riya-vechiot.vercel.app/",
+          }),
+        }}
+      />
+      <body className={`${pressStart2P.variable} antialiased`}>
         {children}
         <Analytics />
       </body>

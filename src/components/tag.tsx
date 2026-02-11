@@ -28,7 +28,7 @@ const tagClass=cva('flex items-center justify-center border-4 border-black pixel
 })
   return (
     <div className={cn(tagClass({ size,shadow }), className)}>
-        <span>{text}</span>
+        <h1>{text}</h1>
     </div>
   )
 }

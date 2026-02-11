@@ -86,6 +86,7 @@ const Hero = ({ scrollY }: HeroProps) => {
                 alt="Riya Vechiot"
                 width={300}
                 height={500}
+                loading="eager"
               />
             </div>
             <motion.div className="absolute -top-2 -right-2 w-6 h-6 bg-pink-400 border-4 border-black"
