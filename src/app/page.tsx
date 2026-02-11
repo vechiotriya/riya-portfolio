@@ -7,6 +7,7 @@ import { PixelPet } from "@/components/pixelPet";
 import Project from "@/components/project";
 import Skill from "@/components/skill";
 import { useScroll } from "motion/react";
+import { Toaster } from "sonner";
 
 export default function Home() {
 const scrollY=useScroll().scrollY;
@@ -23,6 +24,7 @@ const scrollY=useScroll().scrollY;
     <About/>
     <Contact/>
       </main>
+      <Toaster />
       <footer >
       <Footer />
       </footer>
