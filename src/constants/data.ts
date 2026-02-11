@@ -90,7 +90,7 @@ export const projects: ProjectItemProps[] = [
     description:
       "A cross-platform mobile app built with React Native (Expo CLI), offering a smooth and responsive user experience. Backed by a Spring Boot (Java) REST API for secure authentication and scalable data management.",
     tags: ["Typescript", "Java", "React Native","Spring Boot","Expo"],
-    demoUrl: "#",
+    demoUrl: "",
     githubUrl: "https://github.com/vechiotriya/buoy-app",
   },
   {
