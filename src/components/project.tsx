@@ -92,7 +92,7 @@ const Project = () => {
       <span className="text-gray-600 mb-8">
         Professional adventures and side quests
       </span>
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         {projects.length > 0
           ? projects.map((project, index) => (
               <ProjectItem

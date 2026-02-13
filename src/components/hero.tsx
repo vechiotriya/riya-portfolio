@@ -77,7 +77,7 @@ const Hero = ({ scrollY }: HeroProps) => {
         </motion.div>
       </motion.div>
 
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-6 md:max-w-5xl mx-auto">
         <div className="mb-8 flex justify-center">
           <div className="relative">
             <div className="w-40 h-40 border-8 border-black bg-white pixel-shadow overflow-hidden">
@@ -130,7 +130,7 @@ const Hero = ({ scrollY }: HeroProps) => {
             </Button>
         </div>
 
-        <div className="flex flex-col items-center absolute -bottom-18 left-62 pixel-float">
+        <div className="flex flex-col items-center absolute -bottom-18 left-47 md:left-62 pixel-float">
           <div className="w-6 h-9 border-4 border-black flex flex-col items-center justify-start p-2 bg-linear-to-b from-pink-200 to-purple-200">
             <div className="w-1 h-2 bg-black animate-bounce"></div>
           </div>

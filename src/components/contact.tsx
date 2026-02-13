@@ -22,7 +22,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
 }) => {
   return (
     <Button
-      className={`bg-white flex p-4 gap-4 text-black border-2 border-black ${label === "Email" ? "hover:cursor-default" : "hover:cursor-pointer hover:scale-[90%]"}`}
+      className={`bg-white flex p-4 gap-2 md:gap-4 text-black border-2 border-black ${label === "Email" ? "hover:cursor-default" : "hover:cursor-pointer hover:scale-[90%]"}`}
       onClick={() => {
         if (label !== "Email") {
           window.open(url, "_blank", "noopener,noreferrer");
@@ -36,7 +36,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({
         <span className="text-sm text-black pixel-font text-start">
           {label}
         </span>
-        <span className="text-xs text-start text-gray-600">{username}</span>
+        <span className="text-[9px] md:text-xs text-start text-gray-600">{username}</span>
       </div>
     </Button>
   );
@@ -97,7 +97,7 @@ const Contact = () => {
       className="flex flex-col items-center w-full py-20 px-6 bg-gray-50"
     >
       <Tag
-        text="QUEST LOG"
+        text="START A QUEST"
         className="bg-linear-to-r from-lime-200 to-blue-200 mb-6 text-white"
       />
       <span className="text-gray-600 mb-8">

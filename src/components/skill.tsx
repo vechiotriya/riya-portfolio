@@ -126,7 +126,7 @@ const Skill: React.FC = () => {
           Practices
         </ToggleGroupItem>
       </ToggleGroup>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6">
         {active.map((skill) => (
           <SkillItem
             key={skill[0]}
